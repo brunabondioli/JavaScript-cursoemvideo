@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(253, 253, 118);
+            font: normal 14pt Arial;
+        }
+
+        h1{
+            color: rgb(194, 30, 194);
+        }
+    </style>
+    <title>Meu Primeiro Programa</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Tomara que eu consiga compreender e utilizar bem JS!</p>
+    
+    <script>
+       var n1 = Number.parseFloat(window.prompt('Digite um número:')) //'string'
+       var n2 = Number.parseFloat(window.prompt('Digite outro número:')) //string
+       var soma = n1 + n2 
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}!`)
+       /*
+       Outra maneira de concatenar:
+       window.alert('A soma dos valores é ' + soma + '!') 
+        ---
+       Lembre-se que '+' significa concatenação, não soma! Para somar, use '++'
+       window.alert('A soma dos valores é ' + soma + '!').
+       Como coverter um dado string para number?
+       Para converter um string para number, use o comando 'Number.parseInt(n)' - para números inteiros - ou 'Number.parseFloat(n)' - para números decimais/reais. 
+       Na linha 24, lê-se a variável n1 receber o dado de entrada da janela prompt convertendo-o para um valor numérico real. Atenção: digite sempre os decimais com '.' ao invés de ','!
+       Em versões mais novas, apenas o comando 'Number(n)' já funciona
+       */
+    </script>
+</body>
+</html>
